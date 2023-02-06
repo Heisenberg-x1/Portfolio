@@ -13,10 +13,7 @@ body {
   background-attachment: fixed;
 }
 
-
 /* !HEADER */
-
-
 
 .nav {
   height: 10vh;
@@ -34,7 +31,7 @@ body {
   font-size: 20px;
   justify-self: flex-end;
 }
-.contact-me{
+.contact-me {
   width: fit-content;
 }
 .list-container {
@@ -43,6 +40,10 @@ body {
   height: 100%;
   border: 1px solid red;
   right: 0;
+  animation-name: scroll;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 span:hover {
   color: darkorange;
@@ -63,54 +64,54 @@ li:hover {
 }
 
 /* !MAIN */
-.first-page{
+.first-page {
   position: relative;
   height: 90vh;
-
 }
-.me{
-    display: inline-block;
-    margin-left: 40px;
-    font-size: 29px;
+.me {
+  display: inline-block;
+  margin-left: 40px;
+  font-size: 29px;
 }
 .letter {
-    transition: all 0.2s ease-in-out;
-  }
-  .letter:hover {
-    color: green;
-    
-  }
-  .letter::before{
-    color: red;
-  }
-  /* !scroll down */
+  transition: all 0.2s ease-in-out;
+}
+.letter:hover {
+  color: green;
+}
+.letter::before {
+  color: red;
+}
+/* !scroll down */
 
-  .go-down1{
-    border: 1px solid red;
-    width: fit-content;
-    position: absolute;
-    bottom: 0;
-    transform: rotateZ(90deg);
-    margin-left: -15px;
-    margin-bottom: 30px;
+.go-down1 {
+  border: 1px solid red;
+  width: fit-content;
+  position: absolute;
+  bottom: 0;
+  transform: rotateZ(90deg);
+  margin-left: -22px;
+  margin-bottom: 50px;
+}
+.go-down:last-child {
+  color: green;
+  border: 1px solid red;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: rotateZ(90deg);
+  margin-right: -25px;
+  margin-bottom: 50px;
+}
+
+@keyframes scroll {
+  50% {
+    transform: 20px;
   }
-  .go-down:last-child{
-    color: green;
-    border: 1px solid red;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    transform: rotateZ(90deg);
-    margin-right: -15px;
-    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 700px) {
+  .list-container {
+    width: 80vw;
   }
-
-
-
-
-
-  @media screen and (max-height:850px) {
-    .list-container{
-      width: ;
-    }
-  }
+}
