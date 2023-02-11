@@ -6,7 +6,7 @@ letters.forEach(letter => {
     let index = Array.from(letters).indexOf(letter);
     for (let i = index - 1; i <= index + 1; i++) {
       if (letters[i]) {
-        letters[i].style.color = "green";
+        letters[i].style.color = "chocolate";
         letters[i].style.transition = "color 0.5s";
       }
     }
