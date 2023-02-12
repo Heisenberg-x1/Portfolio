@@ -5,7 +5,7 @@
   font-family: "Oswald", sans-serif;
 }
 .everything{
-  background: linear-gradient(230deg,#434343 ,#000000);
+  background: linear-gradient(to bottom right,#353434 ,#000000);
 }
 body {
   width: 100%;
@@ -142,4 +142,32 @@ li:hover {
 
 #about,#skills{
   padding: 60px;
+
+}
+#skills{
+  position: relative;
+}
+.tech-stack{
+  height:fit-content ;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 70vw;
+  position: relative;
+  top: 50%;
+  left: 10%;
+}
+.tech-stack img{
+  width: 130px;
+  float: left; 
+  object-fit: contain;
+  margin: 10px 25px;
+
+}
+figcaption{
+  text-align: center;
+}
+.list a{
+  text-decoration: none;
+  color: white;
 }
