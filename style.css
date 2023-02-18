@@ -76,7 +76,7 @@ li:hover {
   padding: 5px;
   border-radius: 4px;
   color: white;
-  background: linear-gradient(230deg,chocolate,grey);
+  background: linear-gradient(230deg,rgb(138, 117, 2),grey);
 }
 
 /* !MAIN */
@@ -88,6 +88,25 @@ li:hover {
   display: inline-block;
   margin-left: 40px;
   font-size: 29px;
+  position: absolute;
+  top: 30vh;
+  left: 10vw;
+  font-family: 'Shantell Sans', cursive;
+}
+.socials{
+  width: 20vw;
+  position: absolute;
+  top: 50vh;
+  left: 15vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+.socials a{
+  color: white;
+}
+
+.socials a:hover{
+  color: orange;
 }
 .gif{
   
@@ -140,8 +159,26 @@ li:hover {
 
 /* TODO: ABOUT */
 
+#about{
+  height: fit-content;
+}
+.sideImg{
+  mix-blend-mode: lighten;
+}
+.abt,.img2{
+  
+  height: 100%;
+  float: left;
+}
+.abt{
+  width: 70%;
+  padding: 20px;
+}
+.img2{
+  width: 30%;
+}
 #about,#skills{
-  padding: 60px;
+  margin: 60px;
 
 }
 #skills{
