@@ -20,4 +20,14 @@ letters.forEach(letter => {
       }
     }
   });
-});
+})
+
+//a function that sorts an array of integers in a descending order
+function sortDescending(arr) {
+  return arr.sort((a, b) => b - a);
+  fe
+}
+
+
+
+
