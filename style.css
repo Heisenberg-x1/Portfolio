@@ -60,6 +60,9 @@ span:hover {
 li {
   padding: 0 7px;
 }
+#about a, #skills a{
+  text-decoration: none;
+}
 li:hover {
   background: rgb(48, 47, 47);
   width: fit-content;
@@ -126,30 +129,7 @@ li:hover {
 .letter::before {
   color: red;
 }
-/* !scroll down */
 
-.go-down1 {
-  width: fit-content;
-  position: absolute;
-  bottom: 0;
-  transform: rotateZ(90deg);
-  margin-left: -22px;
-  margin-bottom: 50px;
-}
-.go-down:last-child {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  transform: rotateZ(90deg);
-  margin-right: -25px;
-  margin-bottom: 50px;
-}
-
-@keyframes scroll {
-  50% {
-    transform: 20px;
-  }
-}
 
 @media screen and (max-width: 700px) {
   .list-container {
@@ -157,7 +137,7 @@ li:hover {
   }
 }
 
-/* TODO: ABOUT */
+/* TODO: ABOUT
 
 #about{
   height: fit-content;
@@ -207,4 +187,4 @@ figcaption{
 .list a{
   text-decoration: none;
   color: white;
-}
+} */
