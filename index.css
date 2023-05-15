@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+header{
+  /* background: linear-gradient(to bottom right,#353434 ,#000000); */
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+}
+body{
+    background: linear-gradient(to bottom right,#353434 ,#000000);
+
+  opacity: 0.9;
+  overflow-x: hidden;
+    
+}
+#section1{
+    height: 100vh;
+    width: 100%;
+}
+#description{width: 30vw;
+margin-left: 33%;
+}
+#section2, #section3{
+    height: fit-content;
+}
+#section2{
+    border-right: 1px solid #E65728;
+    margin-left: 10vw;
+}
+#section3{
+    margin-right:50%;
+    float: right;
+    border-left: 1px solid #E65728;
+    
+}
+#section3Container{
+    float: right;
+    padding-left: 50%;
+}
+#corouselHackathon{
+    width: 70vw;
+    margin: 0 auto ;
+}
+#article1, #article2{
+    width: 70%;
+    padding: 30px;
+    border: 1px solid #E65728;
+    border-radius: 7px;
+    box-shadow: 0 0 5px #E65728;
+    margin: 0 auto;
+}
+#addedInfo{
+    width: 70%;
+    border-bottom: 1px solid #E65728;
+}
+
+/* FOOTER */
+footer{
+    height: fit-content;
+    width: 100vw;
+    background: #000000;
+    box-shadow: 0 0 5px white;
+}
+footer #links a{
+    text-decoration: none;
+    color: white;
+}
+footer #links a:hover{
+    color: #E65728;
+}
