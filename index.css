@@ -3,13 +3,33 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
+    font-family: "Oswald", sans-serif;
 }
-header{
-  /* background: linear-gradient(to bottom right,#353434 ,#000000); */
-  height: 10vh;
-  width: 100vw;
-  position: fixed;
-}
+
+/* !HEADER */
+#nav .navbar-nav .nav-link {
+    color: white;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1.2;
+  }
+  #nav .navbar-toggler-icon {
+    color: white;
+  }
+  
+  #nav{
+    height: 10vh;
+    position: fixed;
+    width: 100vw;
+    border: 1px solid #E65728;
+  }
+  #nav .navbar-nav .nav-link:hover{
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 7px tomato;
+    }
+
+  /* BODY */
 body{
     background: linear-gradient(to bottom right,#353434 ,#000000);
 
@@ -71,4 +91,13 @@ footer #links a{
 }
 footer #links a:hover{
     color: #E65728;
+}
+
+/* CONTACT ME PAGE */
+#contactBody{
+    background: url(./photo/CodeBG.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
