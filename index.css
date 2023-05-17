@@ -93,11 +93,44 @@ footer #links a:hover{
     color: #E65728;
 }
 
-/* CONTACT ME PAGE */
+/* !CONTACT ME PAGE */
 #contactBody{
     background: url(./photo/CodeBG.jpg) ;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+}
+#contactMe ul li{
+    margin: 20px 0;
+    padding-left: 0;
+    width: max-content;
+}
+#contactMe ul li a{
+    text-decoration: none;
+    color: white;
+}#div1Contact{
+    border-radius: 30px;
+    background: #212121;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+                -15px -15px 30px rgb(60, 60, 60);
+}
+#div2Contact{
+    border-radius: 30px;
+    background: #212121;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+                15px 15px 30px rgb(60, 60, 60);
+}
+#contactMe h4{
+    line-height: 1.6;
+}
+#contactMe ul li i:hover{
+    color: #E65728;
+    cursor: pointer;
+
+}
+#contactMe ul li:hover{
+    color: #E65728;
+    cursor: pointer;
 
 }
