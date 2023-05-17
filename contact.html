@@ -7,6 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
+
+
     <title>Contact Me</title>
 </head>
 
@@ -32,38 +34,110 @@
         <br><br><br><br>
     </header>
     <main>
-        <div class="container container-fluid border text-center">
+        <div class="container container-fluid text-center">
 
-            <h2 class="text-center">Contact Form</h2>
+            <h2 class="text-center" id="" ContactMe>Contact Form</h2>
         </div>
         <br><br>
-        <div class="container " id="contactMe">
-            <div class="row">
-                <div class="col-12 col-sm-6" id="div1Contact">
-                    <br>
-                    <h4 style="text-align: center;">Contact me</h4>
-                    <ul style="list-style-type: none;">
-                        <li ><i class="fa-sharp fa-solid fa-location-dot"></i>&nbsp;&nbsp; Budapest, Hungary</li>
-                        <li><i class="fa-solid fa-phone"></i> &nbsp;&nbsp; +36206249683</li>
-                        <li><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp; chemerilcollins@gmail.com</li>
-                        <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/collins-kipkemoi-7985a125a/">&nbsp;&nbsp; LINKEDIN</a></li>
-                    </ul>
+        <div class="ContactMeContainer">
 
 
-                </div>
-                <div class="col-12 col-sm-6 " id="div2Contact">
+            <div class="container position-relative h-100" id="contactMe">
+                <div class="row">
+                    <!-- !DIV1 -->
+                    <div class="col-12 col-sm-5 col-5-md h-100" id="div1Contact">
+                        <br>
+                        <h4 style="text-align: center;">Contact me</h4>
+                        <ul style="list-style-type: none;">
+                            <li><i class="fa-sharp fa-solid fa-location-dot"></i>&nbsp;&nbsp; Budapest, Hungary</li>
+                            <li><i class="fa-solid fa-phone"></i> &nbsp;&nbsp; +36206249683</li>
+                            <li><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp; chemerilcollins@gmail.com</li>
+                            <li><i class="fa-brands fa-linkedin"></i> <a
+                                    href="https://www.linkedin.com/in/collins-kipkemoi-7985a125a/">&nbsp;&nbsp;
+                                    LINKEDIN</a>
+                            </li>
+                        </ul>
+                        <br><br><br><br><br><br>
+
+
+                    </div>
+                    <!-- !DIV2 -->
                     <br>
-                    <h4 style="text-align: center;">Get in touch with me</h4>
-                    <!-- !TOMORROW WE START FROM HERE -->
+                    <div class="col-12 col-sm-5 col-5-md ms-1 position-absolute top-0 end-0  " id="div2Contact">
+                        <br>
+                        <h4 style="text-align: center;">Get in touch with me</h4>
+                        <div>
+                            <label for="email">Email</label>
+                            <br>
+                            <input type="email" name="email" id="email" required>
+                            </form>
+                            <br><br>
+                            <p>Choose your preferred css library</p>
+                            <div class="radio">
+
+                                <label class="material-radio">
+                                    <input type="radio" name="tutorial">
+                                    <span class="radiobtn"></span>
+                                    Bootstrap
+                                </label>
+                                <br>
+                                <label class="material-radio">
+                                    <input type="radio" name="tutorial">
+                                    <span class="radiobtn"></span>
+                                    Tailwind
+                                </label>
+                            </div>
+                            <br>
+                            <p>What are you learning now?</p>
+                            <div class="check">
+                                <label class="material-checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Web development
+                                </label>
+                                <br>
+                                <label class="material-checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    App development
+                                </label>
+                                <br>
+                                <label class="material-checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Artificial Intelligence
+                                </label>
+                                <br>
+                                <label class="material-checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Machine Learning
+                                </label>
+                                <br>
+
+                            </div>
+                            <br>
+                            <div class="buttons">
+                                <button type="submit" class="btn">Submit</button>
+                                <button type="reset" class="btn ">Reset</button>
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
     </main>
     <footer></footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/0c0bb61621.js" crossorigin="anonymous"></script>
+
+
 </body>
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/0c0bb61621.js" crossorigin="anonymous"></script>
 
 </html>
