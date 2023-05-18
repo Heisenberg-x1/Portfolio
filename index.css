@@ -3,8 +3,9 @@
   padding: 0;
   box-sizing: border-box;
   color: white;
-  font-family: "Oswald", sans-serif;
 }
+/* THE HOME PAGE */
+
 
 /* !HEADER */
 #nav .navbar-nav .nav-link {
@@ -44,14 +45,17 @@ body {
 .ContactMeContainer {
   height: 50vh;
 }
-#section1 {
-  height: 100vh;
-  width: 100%;
-}
 #mainScreenAnimation {
   position: absolute;
   bottom: 20%;
   left: 45%;
+}
+#section1 {
+  height: 100vh;
+  width: 100%;
+}
+#developer{
+  mix-blend-mode: color-burn;
 }
 #description {
   width: 30vw;
@@ -60,19 +64,15 @@ body {
 #section2,
 #section3 {
   height: fit-content;
+  font-size: 1.3em;
 }
 #section2 {
-  border-right: 1px solid #e65728;
   margin-left: 10vw;
 }
 #section3 {
-  margin-right: 50%;
-  float: right;
-  border-left: 1px solid #e65728;
 }
 #section3Container {
   float: right;
-  padding-left: 50%;
 }
 #corouselHackathon {
   width: 70vw;
@@ -107,6 +107,7 @@ footer #links a {
 footer #links a:hover {
   color: #e65728;
 }
+/* *CONTACT ME */
 #contactBody {
   background: url(./photo/CodeBG.jpg);
   background-position: center;
