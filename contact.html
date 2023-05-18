@@ -23,7 +23,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="toggleMobileMenu">
                     <ul class="navbar-nav ms-auto text-end me-md-3 me-lg-5">
-                        <li><a class="nav-link" href="index.html">HOME</a></li>
+                        <li><a class="nav-link nav-underline" href="index.html">HOME</a></li>
                         <li><a class="nav-link" href="about.html">ABOUT</a></li>
                         <li><a class="nav-link" href="">PROJECTS</a></li>
                         <li><a class="nav-link" href="contact.html">CONTACT</a></li>
@@ -33,42 +33,14 @@
         </div>
         <br><br><br><br>
     </header>
-    <main>
-        <div class="container container-fluid text-center">
-
-            <h2 class="text-center" id="" ContactMe>Contact Form</h2>
-        </div>
-        <br><br>
-        <div class="ContactMeContainer">
-
-
-            <div class="container position-relative h-100" id="contactMe">
-                <div class="row">
-                    <!-- !DIV1 -->
-                    <div class="col-12 col-sm-5 col-5-md h-100" id="div1Contact">
-                        <br>
-                        <h4 style="text-align: center;">Contact me</h4>
-                        <ul style="list-style-type: none;">
-                            <li><i class="fa-sharp fa-solid fa-location-dot"></i>&nbsp;&nbsp; Budapest, Hungary</li>
-                            <li><i class="fa-solid fa-phone"></i> &nbsp;&nbsp; +36206249683</li>
-                            <li><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp; chemerilcollins@gmail.com</li>
-                            <li><i class="fa-brands fa-linkedin"></i> <a
-                                    href="https://www.linkedin.com/in/collins-kipkemoi-7985a125a/">&nbsp;&nbsp;
-                                    LINKEDIN</a>
-                            </li>
-                        </ul>
-                        <br><br><br><br><br><br>
-
-
-                    </div>
-                    <!-- !DIV2 -->
-                    <br>
-                    <div class="col-12 col-sm-5 col-5-md ms-1 position-absolute top-0 end-0  " id="div2Contact">
-                        <br>
-                        <h4 style="text-align: center;">Get in touch with me</h4>
-                        <div>
-                            <label for="email">Email</label>
-                            <br>
+    <main >
+        <div id="contactPageContainer">
+            <div class="row" id="row">
+                <div class="col" id="twoDivs">
+                    <div id="div1Contact">
+                        <h4 style="text-align: center;padding-top: 20px;">Get in touch with me</h4>
+                        <div id="form-Contact">
+                            <label for="email">Email</label> <br>
                             <input type="email" name="email" id="email" required>
                             </form>
                             <br><br>
@@ -117,12 +89,30 @@
 
                             </div>
                             <br>
+                            <p>Write me any suggestion</p>
+                            <textarea name="" id="t-area" cols="30" rows="10"></textarea>
                             <div class="buttons">
-                                <button type="submit" class="btn">Submit</button>
                                 <button type="reset" class="btn ">Reset</button>
+                                <button type="submit" class="btn">Submit</button>
                             </div>
 
                         </div>
+                    </div>
+                </div>
+                <div class="col" id="twoDivs">
+                    <div id="div1Contact">
+                        <br>
+                        <h4 style="padding-left: 30px;">Contact me</h4>
+                        <ul style="list-style-type: none;" id="list-contact">
+                            <li><i class="fa-sharp fa-solid fa-location-dot"></i>&nbsp;&nbsp; Budapest, Hungary</li>
+                            <li><i class="fa-solid fa-phone"></i> &nbsp;&nbsp; +36206249683</li>
+                            <li><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp; chemerilcollins@gmail.com</li>
+                            <li><i class="fa-brands fa-linkedin"></i> <a
+                                    href="https://www.linkedin.com/in/collins-kipkemoi-7985a125a/">&nbsp;&nbsp;
+                                    LINKEDIN</a>
+                            </li>
+                        </ul>
+
 
                     </div>
                 </div>
