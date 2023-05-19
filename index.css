@@ -107,6 +107,11 @@ footer #links a {
 footer #links a:hover {
   color: #e65728;
 }
+ #footer{
+  width: 80vw;
+  margin: 0 auto;
+  padding: 20px;
+}
 /* *CONTACT ME */
 #contactBody {
   background: url(./photo/CodeBG.jpg);
