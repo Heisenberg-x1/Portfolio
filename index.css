@@ -178,41 +178,8 @@ footer #links a:hover {
   padding: 20px 0;
 }
 
-/* !CONTACT ME PAGE */
-/* 
-#contactMe ul li {
-  margin: 20px 0;
-  padding-left: 0;
-  width: max-content;
-}
-
-#div1Contact {
-  border-radius: 30px;
-  height: 100vh;
-  background: #212121;
-  box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#div1Contact, #div2Contact {
-  flex: 1;
-}
-#div1Contact + #div2Contact {
-  margin-left: 20px;
-}
-
-#contactMe h4 {
-  line-height: 1.6;
-}
-#contactMe ul li i:hover,
-#contactMe ul li a:hover,
-#contactMe ul li:hover {
-  color: #e65728;
-  cursor: pointer;
+#contactme-main{
+  padding-bottom: 60px;
 }
 /* div2 */
 #contactPageContainer {
