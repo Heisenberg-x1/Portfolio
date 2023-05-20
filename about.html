@@ -9,9 +9,7 @@
   <meta name="description" content="This is my portfolio" />
   <title>Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet" /> -->
+  
   <link rel="icon" href="./photo/icon.jpg">
   <script src="https://kit.fontawesome.com/0c0bb61621.js" crossorigin="anonymous"></script>
   <!-- Bootstrap -->
@@ -20,23 +18,37 @@
 
 <body class="everything " style="width: 100vw; ">
   <header>
-    <div class="container-fluid" id="nav">
-      <nav id="nav" class="navbar navbar-expand-sm me-0 ">
-        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" aria-controls="toggleMobileMenu"
-          data-bs-target="#toggleMobileMenu" aria-expanded="false" aria-label="toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="toggleMobileMenu">
-          <ul class="navbar-nav ms-auto text-end me-md-3 me-lg-5">
-            <li><a class="nav-link" href="index.html">HOME</a></li>
-            <li><a class="nav-link" href="about.html">ABOUT</a></li>
-            <li><a class="nav-link" href="">PROJECTS</a></li>
-            <li><a class="nav-link" href="contact.html">CONTACT</a></li>
-          </ul>
+    <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top" id="nav">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="project.html">PROJECTS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">CONTACT</a>
+                </li>
+                
+              </ul>
+              
+            </div>
+          </div>
         </div>
       </nav>
-    </div>
-  </header>
+    <br><br><br><br>
+</header>
   <main>
     <div class="container-fluid">
       <div class="row">
