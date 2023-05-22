@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,38 +15,37 @@
 <body id="body">
     <header>
         <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top" id="nav">
-            <div class="container-fluid">
-              <img src="./photo/me2.jpg" class="rounded-circle shadow-4 "
-        style="height: 40px; width: 40px;"  alt="Avatar" />
-              <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="about.html">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="project.html">PROJECTS</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="contact.html">CONTACT</a>
-                    </li>
-      
-                  </ul>
-      
-                </div>
+          <div class="container-fluid">
+            <img id="iconImage" src="./photo/me2.jpg" class="rounded-circle shadow-4 " style="height: 40px; width: 40px;" alt="Avatar">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="iconImage">
+    
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="project.html">PROJECTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">CONTACT</a>
+                  </li>
+    
+                </ul>
+    
               </div>
             </div>
-          </nav>
+          </div>
+        </nav>
         <br><br><br><br>
-    </header>
+      </header>
     <main>
         <!-- !WELCOME PAGE WITH 100VH -->
         <div class="container container-fluid">
@@ -62,23 +62,24 @@
                 <h2 style="color: white;text-align: center; padding-top: 20vh;"><strong>WELCOME TO MY PORTFOLIO</strong>
                 </h2>
                 <br>
-                <h1>Hi, I'm Collins</h1>
-                <section id="description">
+                <h2>Hi, I'm Collins</h2>
+                <aside id="description">
                     <p>A Computer Science Student and a web developer based in Hungary.
                     </p>
-                </section>
+                </aside>
 
             </section>
-            <div class="loader JS_on" id="mainScreenAnimation">
+            <!-- <div class="loader JS_on" id="mainScreenAnimation">
                 <span class="binary"></span>
                 <span class="binary"></span>
                 <span class="getting-there"><strong>SCROLL DOWN...</strong></span>
-            </div>
+            </div> -->
         </div>
         <div class="container container-fluid">
             <div class="row">
-                <div class="col col-md-10 col-lg-8 ">
+                <div class="col col-md-10 col-lg-8 col-xl-7 ">
                     <section class="text-white" id="section2">
+                        <h4>Intro</h4>
                         <p>
                             Hi there! My name is <strong>Collins Kipkemoi</strong> and I am a 21-year-old computer
                             science student at Eotvos Lorand University in Hungary. Originally from Kenya, I have always
@@ -90,13 +91,14 @@
                 </div>
             </div>
             <br>
-            <div class="w-90 container container-fluid">
+            <div class="w-80 container container-fluid border ">
 
-                <img src="./photo/developer.png" alt="An image of a developer" id="developer" width="100%">
+                <img class="img-responsive ms-auto" src="./photo/developer.png" alt="An image of a developer" id="developer" >
             </div>
             <div class="row mt-5">
                 <div class="col col-md-10 col-lg-8" id="section3Container">
                     <section id="section3" style="padding:0 20px;">
+                        <h4>My Story</h4>
                         <p>
                             I am absolutely fascinated with technology, web development, and AI. These fields are
                             constantly evolving, offering endless opportunities for innovation and growth. As a computer
@@ -110,41 +112,43 @@
             </div>
             <br>
             <!-- a thumbnail -->
-            <section class="w-80 text-center">
+            <div class="w-80 text-center">
                 <figure>
                     <figcaption><i>The K&H Hackathon in Budapest</i></figcaption>
-                    <<img class="img-thumbnail img img-fluid" src="./photo/k&h1.jpg" alt="The k&H hackathon group photo"
-                        width="50%">
+                    <img id="thumbnail" class="img-thumbnail img img-fluid" src="./photo/k&h1.jpg" alt="The k&H hackathon group photo"
+                        >
                 </figure>
-            </section>
+            </div>
             <br><br>
 
             <br><br><br>
             <div>
                 <div class=" container container-fluid">
                     <article id="article1">
-                        As a developing programmer, my ultimate goal is to gain more practical experience through
+                        <h4>goals</h4>
+                       <p> As a developing programmer, my ultimate goal is to gain more practical experience through
                         internships or junior developer positions. This would allow me to apply what I've learned in
                         school and during events like hackathons to real-world scenarios while learning from
                         experienced developers. As I work towards achieving this goal, I am also interested in
                         contributing to open source projects in order to continue honing my skills and collaborating
-                        with other developers.
+                        with other developers.</p>
 
 
                     </article>
                     <br>
                     <p class="text-center">Below is a sample overview of the K&H Hackathon that I attended.</p>
                     <figure style="width:60%;margin-left: 30%;">
-                        <video class="object-fit-contain rounded" src="./video/video_2023-05-15_17-41-48.mp4"
-                            width="70%" controls></video>
+                        <video id="video" class="object-fit-contain rounded" src="./video/video_2023-05-15_17-41-48.mp4" poster="./photo/k&h2.jpg"
+                             controls></video>
                         <figcaption><i>A sample overview of the k&H Hackathon</i></figcaption>
                     </figure>
                     <br>
                     <article id="article2">
-                        For me, software development is not just a job, it's a passion. I'm always eager to grow my
-                        knowledge and skillset and I believe that attending hackathons, seeking internships, and
-                        contributing to open-source projects are all great ways to do so. I hope to one day be able
-                        to make a meaningful impact on the world through my work in the tech industry.
+                        <h4>Passionate, Learning, Impactful.</h4>
+                        <p>For me, software development is not just a job, it's a passion. I'm always eager to grow my
+                            knowledge and skillset and I believe that attending hackathons, seeking internships, and
+                            contributing to open-source projects are all great ways to do so. I hope to one day be able
+                            to make a meaningful impact on the world through my work in the tech industry.</p>
                     </article>
                 </div>
             </div>
@@ -161,10 +165,8 @@
         </div>
 
     </main>
-
-
-    <!-- FOOTER -->
     <footer>
+        <!-- FOOTER -->
         <div id="footer">
             <div class="container container-fluid row  text-center">
                 <div class="col" id="links">

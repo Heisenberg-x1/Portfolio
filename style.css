@@ -3,11 +3,10 @@
   margin: 0;
   box-sizing: border-box;
   color: aliceblue;
-  
-}
+  font-size: 1em;}
 .everything {
   background: linear-gradient(to bottom right, #353434, #000000);
-  overflow-x: hidden;
+  overflow-x: auto;
   font-size: 1em;
 }
 body {
@@ -27,24 +26,22 @@ body {
 }
 #nav .navbar-nav .nav-link:hover {
   border-bottom: 1px solid white;
-  border-radius: 5px;
-  box-shadow: 0px 4px 4px tomato;
+  border-radius: 2px;
 }
-
 #nav {
   height: 10vh;
   background: linear-gradient(315deg, #000000 0%, #414141 74%);
 }
-.offcanvas-body{
+.offcanvas-body {
   background: linear-gradient(315deg, #000000 0%, #414141 74%);
 }
-.offcanvas-body li{
+.offcanvas-body li {
   color: white;
   display: flex;
   justify-content: center;
 }
-.navbar-toggler-icon{
-  color:#e65728;
+.navbar-toggler-icon {
+  color: #e65728;
 }
 /* !MAIN */
 .first-page {
@@ -106,7 +103,6 @@ body {
   color: darkorange;
 }
 
-
 #stack {
   display: flex;
   width: 80vw;
@@ -118,23 +114,35 @@ body {
 #stack img {
   aspect-ratio: 4/3;
   object-fit: contain;
+  width:8rem;
 }
-#heading {
+#heading1, #heading2, #heading3, #heading4, #heading5{
   margin-left: 10vw;
 }
-#heading b {
+#heading1 b, #heading2 b, #heading3 b, #heading4 b, #heading5 b{
   color: #e65728;
 }
-#content, #footer{
+#content1, #content2, #content3, #content4{
   width: 80vw;
   margin: 0 auto;
   padding: 20px;
+}
+#footer {
+  width: 80vw;
+  margin: 0 auto;
+  padding: 20px;
+}
+#table ul li{
+  list-style-type: disc;
+}
+#table a:visited{
+  color:purple;
 }
 footer {
   height: fit-content;
   width: 100vw;
   background: linear-gradient(315deg, #000000 0%, #414141 74%);
- 
+
   box-shadow: 0 0 5px white;
 }
 footer #links a {
@@ -144,7 +152,7 @@ footer #links a {
 footer #links a:hover {
   color: #e65728;
 }
- #footer{
+#footer {
   width: 80vw;
   margin: 0 auto;
   padding: 20px;
@@ -156,24 +164,36 @@ footer #links a:hover {
   margin-top: 10vh;
   min-height: 90vh;
 }
-.card-body{
+.card-body {
   background-color: #353434;
 }
-.card-body .card-title{
+.card-body .card-title {
   color: white;
 }
-.card{
+.card {
   border: 1px solid green;
-} 
-.card-title{
+}
+.card-title {
   color: white;
 }
-  .row .card{
-    border:none;
-    border-radius: 5px;
-    box-shadow: 0px 0px 8px #e65728;
-    
+.row .card {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px #e65728;
+}
+.col .card {
+  aspect-ratio: 2/3;
+}
+@media print {
+  .card {
+    border: none;
+    box-shadow: none;
   }
-  .col .card{
-    aspect-ratio: 2/3;
-  }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+    font-family: Arial, sans-serif;
+}
+}
