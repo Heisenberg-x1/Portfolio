@@ -77,7 +77,6 @@ body {
 #section2,
 #section3 {
   height: fit-content;
-  font-size: 1.3em;
 }
 #section2 {
   margin-left: 10vw;
@@ -92,7 +91,7 @@ body {
   margin: 0 auto;
 }
 #article1,
-#article2 {
+#article2, #article3 {
   width: 70%;
   padding: 30px;
   border: 1px solid #e65728;
