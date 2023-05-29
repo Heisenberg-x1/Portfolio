@@ -161,8 +161,19 @@ footer #links a:hover {
 /* PROJECT */
 #project-main {
   background: linear-gradient(315deg, #000000 0%, #414141 74%);
-  margin-top: 10vh;
-  min-height: 90vh;
+margin-top: -5vh;
+  min-height: 100vh;
+}
+@media (max-width: 767px) {
+  .card-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+#card-col{
+  display: flex;
+  justify-content: center;
 }
 .card-body {
   background-color: #353434;

@@ -51,25 +51,23 @@
     <div class="container container-fluid">
       <div class="row">
         <div class="col">
-          <h1 class="mt-5"><b>CONTACT ME</b></h1>
           <p>Interested in working with me? Reach out and let's explore the possibilities.</p>
         </div>
       </div>
     </div>
-    <div id="contactPageContainer">
-      <div class="row" id="row">
-        <div class="col" id="twoDivs1">
-          <div id="div1Contact1">
+    <div class="container container-fluid" id="contactPageContainer">
+        <div class="container-fluid row text-center" id="twoDivs1">
+          <div class="col col-md-5 me-2" id="div1Contact1">
             <h4 style="text-align: center;padding-top: 20px;">Get in touch with me</h4>
             <div id="form-Contact">
-              <form action="mailto:chemerilcollins@gmail.com">
+              <form action="mailto:chemerilcollins@gmail.com" action="post">
                 <label for="email">Email</label>
                 <br>
                 <input type="email" name="email" id="email" required>
                 <br><br>
 
-                <p>Choose your preferred CSS library</p>
-                <div class="radio">
+                <label for="library">Choose your preferred CSS library</label>
+                <div class="radio" id="library">
                   <label>
                     <input type="radio" name="library" value="bootstrap">
                     Bootstrap
@@ -82,8 +80,8 @@
                 </div>
                 <br>
 
-                <p>What are you learning now?</p>
-                <div class="check">
+                <label for="check">What are you learning now?</label>
+                <div class="check" id="check">
                   <label>
                     <input type="checkbox" name="learning[]" value="web-development">
                     Web development
@@ -106,19 +104,23 @@
                 </div>
                 <br>
 
-                <p>Write me any suggestion</p>
+                <label for="t-area">Write me any suggestion</label>
+                <br>
                 <textarea name="suggestion" id="t-area" cols="30" rows="10"></textarea>
 
-                <div class="buttons">
-                  <button type="reset" class="btn">Reset</button>
-                  <button type="submit" class="btn">Submit</button>
-                </div>
+                <!-- Two input buttons -->
+                <div class="row" id="buttons">
+                  <div class="col">
+                    <input class="btn" type="submit" value="Submit" id="send">
+                  </div>
+                  <div class="col">
+                    <input class="btn" type="reset" value="Reset" id="reset">
+                  </div>
               </form>
             </div>
           </div>
         </div>
-        <div class="col" id="twoDivs2">
-          <div id="div1Contact2">
+          <div class="col col-md-5 ms-2" id="div1Contact2">
             <br>
             <h4 style="padding-left: 30px;">Contact me</h4>
             <ul style="list-style-type: none;" id="list-contact">
@@ -133,8 +135,6 @@
 
 
           </div>
-        </div>
-      </div>
     </div>
   </main>
   <footer>
