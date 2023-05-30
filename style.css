@@ -6,8 +6,8 @@
   font-size: 1em;}
 .everything {
   background: linear-gradient(to bottom right, #353434, #000000);
-  overflow-x: auto;
   font-size: 1em;
+  margin-right: 0;
 }
 body {
   width: 100%;
@@ -47,8 +47,18 @@ body {
 .first-page {
   position: relative;
   height: 80vh;
+  width: 50%;
+}
+#about-me-main{
   width: 100%;
 }
+@media screen and (min-width: 576px) {
+  #about-me-main {
+    margin-top:17vh
+  }
+}
+  
+
 #div1 {
   display: flex;
   flex-direction: column;

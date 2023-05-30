@@ -77,12 +77,12 @@ body {
 #section2,
 #section3 {
   height: fit-content;
-  font-size: 1.3em;
 }
 #section2 {
   margin-left: 10vw;
 }
 #section3 {
+  margin-top: 25px;
 }
 #section3Container {
   float: right;
@@ -91,8 +91,13 @@ body {
   width: 70vw;
   margin: 0 auto;
 }
+#developer-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #article1,
-#article2 {
+#article2, #section3, #section2 {
   width: 70%;
   padding: 30px;
   border: 1px solid #e65728;
@@ -153,9 +158,15 @@ footer #links a:hover {
 #row {
   width: 100%;
 }
+#div1Contact1{
+  padding-bottom: 25px;
+}
+#div2d{
+  margin-top: 30px;
+}
 #div1Contact1, #div1Contact2 {
   border-radius: 30px;
-  height: 100%;
+  height: fit-content;
   background: #212121;
   box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
 }
