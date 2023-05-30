@@ -97,7 +97,7 @@ body {
   align-items: center;
 }
 #article1,
-#article2, #section3, #section2 {
+#article2 {
   width: 70%;
   padding: 30px;
   border: 1px solid #e65728;
