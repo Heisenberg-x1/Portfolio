@@ -8,6 +8,10 @@
   background: linear-gradient(to bottom right, #353434, #000000);
   font-size: 1em;
   margin-right: 0;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Oswald', sans-serif;
+font-family: 'Titillium Web', sans-serif;
 }
 body {
   width: 100%;
@@ -20,18 +24,36 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 #nav .navbar-toggler-icon {
   color: white;
 }
 #nav .navbar-nav .nav-link:hover {
-  border-bottom: 1px solid white;
-  border-radius: 2px;
+  color:tomato;
 }
 #nav {
   height: 10vh;
   background: linear-gradient(315deg, #000000 0%, #414141 74%);
 }
+.navbar-nav li a:hover {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  
+  50% {
+    transform: scale(1.1);
+  }
+  
+  100% {
+    transform: scale(1);
+  }
+}
+
 .offcanvas-body {
   background: linear-gradient(315deg, #000000 0%, #414141 74%);
 }
@@ -46,17 +68,20 @@ body {
 /* !MAIN */
 .first-page {
   position: relative;
+  margin: 0 auto;
   height: 80vh;
   width: 50%;
 }
 #about-me-main{
   width: 100%;
+  height: 90vh;
+  margin-top: 10vh;
 }
-@media screen and (min-width: 576px) {
+/* @media screen and (min-width: 576px) {
   #about-me-main {
     margin-top:17vh
   }
-}
+} */
   
 
 #div1 {
@@ -80,6 +105,7 @@ body {
 }
 .samurai {
   position: absolute;
+  visibility: hidden;
   top: 0;
   right: 20%;
 }
@@ -98,7 +124,6 @@ body {
   height: 50%;
   object-fit: contain;
   mix-blend-mode: lighten;
-  border: 1px solid green;
 }
 #gif {
   mix-blend-mode: lighten;

@@ -6,17 +6,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Projects</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <link rel="icon" href="./photo/CK.png">
-  
+  <!-- !google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Titillium+Web:wght@200&display=swap"
+    rel="stylesheet">
+
+  <title>Projects</title>
+
 </head>
 
 <body class="project-body">
   <header>
     <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top" id="nav">
       <div class="container-fluid">
-        <img id="iconImage" src="./photo/me2.jpg" class="rounded-circle shadow-4 " style="height: 40px; width: 40px;" alt="Avatar">
+        <img id="iconImage" src="./photo/me2.jpg" class="rounded-circle shadow-4 " style="height: 40px; width: 40px;"
+          alt="Avatar">
         <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -65,7 +73,8 @@
             <div class="card-body">
               <h5 class="card-title">Simple log in page</h5>
               <p class="card-text">I did this project after finishing html and css</p>
-              <a href="https://github.com/Heisenberg-x1/sign-in-up-2.git" class="btn btn-primary" target="_blank">View Project</a>
+              <a href="https://github.com/Heisenberg-x1/sign-in-up-2.git" class="btn btn-primary" target="_blank">View
+                Project</a>
             </div>
           </div>
         </div>
@@ -75,7 +84,8 @@
             <div class="card-body">
               <h5 class="card-title">Project 2</h5>
               <p class="card-text">I created an online nike-like shop.</p>
-              <a href="https://github.com/Heisenberg-x1/Nike.git" class="btn btn-primary" target="_blank" >View Project</a>
+              <a href="https://github.com/Heisenberg-x1/Nike.git" class="btn btn-primary" target="_blank">View
+                Project</a>
             </div>
           </div>
         </div>
@@ -85,7 +95,8 @@
             <div class="card-body">
               <h5 class="card-title">Project 3</h5>
               <p class="card-text">This is a subscription plan project.</p>
-              <a href="https://github.com/Heisenberg-x1/Subscription.git" class="btn btn-primary" target="_blank">View Project</a>
+              <a href="https://github.com/Heisenberg-x1/Subscription.git" class="btn btn-primary" target="_blank">View
+                Project</a>
             </div>
           </div>
         </div>
@@ -95,7 +106,8 @@
             <div class="card-body">
               <h5 class="card-title">Project 4</h5>
               <p class="card-text">A c# bag manipulation program.</p>
-              <a href="https://github.com/Heisenberg-x1/The-Bag.git" class="btn btn-primary" target="_blank">View Project</a>
+              <a href="https://github.com/Heisenberg-x1/The-Bag.git" class="btn btn-primary" target="_blank">View
+                Project</a>
             </div>
           </div>
         </div>
@@ -115,7 +127,8 @@
             <div class="card-body">
               <h5 class="card-title">Project 6</h5>
               <p class="card-text">Environmental Radiation Simulation</p>
-              <a href="https://github.com/Heisenberg-x1/Radiation" class="btn btn-primary" target="_blank">View Project</a>
+              <a href="https://github.com/Heisenberg-x1/Radiation" class="btn btn-primary" target="_blank">View
+                Project</a>
             </div>
           </div>
         </div>
@@ -124,8 +137,10 @@
             <img src="./projects/plant-growth_orig.jpg" class="card-img-top" alt="Bag image">
             <div class="card-body">
               <h5 class="card-title">Project 6</h5>
-              <p class="card-text">Environmental radiation Simulation. Simuilates the effects of the various environmental radiations like alpha on plants. Implementation in c#.</p>
-              <a href="https://github.com/Heisenberg-x1/Radiations" class="btn btn-primary" target="_blank">View Project</a>
+              <p class="card-text">Environmental radiation Simulation. Simuilates the effects of the various
+                environmental radiations like alpha on plants. Implementation in c#.</p>
+              <a href="https://github.com/Heisenberg-x1/Radiations" class="btn btn-primary" target="_blank">View
+                Project</a>
             </div>
           </div>
         </div>
@@ -141,7 +156,8 @@
           <br>
           <p><a href="index.html"><b>HOME</b></a> &nbsp;|&nbsp; <a href="about.html"><b>ABOUT ME</b></a> &nbsp;|&nbsp;
             <a href="contact.html"><b>CONTACT ME</b> </a>
-            &nbsp;|&nbsp; <a href="project.html"><b>PROJECTS</b></a> </p>
+            &nbsp;|&nbsp; <a href="project.html"><b>PROJECTS</b></a>
+          </p>
         </div>
 
       </div>
@@ -162,18 +178,19 @@
 
   </footer>
   <script>
-const url = window.location.href;
-const navLinks = document.querySelectorAll('.nav-link');
-for (let i = 0; i < navLinks.length; i++) {
-  if (navLinks[i].href === url) {
-    navLinks[i].style.borderBottom = '1px solid white';
-    navLinks[i].style.borderRadius = '5px';
-    navLinks[i].style.boxShadow = '0 4px 4px tomato';
-  }
-}
+    const url = window.location.href;
+    const navLinks = document.querySelectorAll('.nav-link');
+    for (let i = 0; i < navLinks.length; i++) {
+      if (navLinks[i].href === url) {
+        navLinks[i].style.borderRadius = '5px';
+        navLinks[i].style.boxShadow = '0 3px 5px tomato';
+      }
+    }
 
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
