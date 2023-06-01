@@ -3,15 +3,16 @@
   margin: 0;
   box-sizing: border-box;
   color: aliceblue;
-  font-size: 1em;}
+  font-size: 1em;
+}
 .everything {
   background: linear-gradient(to bottom right, #353434, #000000);
   font-size: 1em;
   margin-right: 0;
   height: 100vh;
-  overflow: hidden;
-  font-family: 'Oswald', sans-serif;
-font-family: 'Titillium Web', sans-serif;
+  overflow-x: hidden;
+  font-family: "Oswald", sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 body {
   width: 100%;
@@ -30,9 +31,11 @@ body {
   color: white;
 }
 #nav .navbar-nav .nav-link:hover {
-  color:tomato;
+  color: tomato;
 }
 #nav {
+  font-family: "Oswald", sans-serif;
+  font-family: "Titillium Web", sans-serif;
   height: 10vh;
   background: linear-gradient(315deg, #000000 0%, #414141 74%);
 }
@@ -44,11 +47,11 @@ body {
   0% {
     transform: scale(1);
   }
-  
+
   50% {
     transform: scale(1.1);
   }
-  
+
   100% {
     transform: scale(1);
   }
@@ -69,20 +72,19 @@ body {
 .first-page {
   position: relative;
   margin: 0 auto;
-  height: 80vh;
-  width: 50%;
+  height: 90vh;
+  background: linear-gradient(315deg, rgba(0,0,0,0.4) 0%, #414141 74%), url(./photo/codeBg2.jpg);
+background-position: left top;
 }
-#about-me-main{
+.first-page {
   width: 100%;
   height: 90vh;
-  margin-top: 10vh;
 }
 /* @media screen and (min-width: 576px) {
   #about-me-main {
     margin-top:17vh
   }
 } */
-  
 
 #div1 {
   display: flex;
@@ -135,7 +137,7 @@ body {
   transition: all 0.2s ease-in-out;
 }
 .letter:hover {
-  color: darkorange;
+  color: tomato;
 }
 
 #stack {
@@ -149,15 +151,26 @@ body {
 #stack img {
   aspect-ratio: 4/3;
   object-fit: contain;
-  width:8rem;
+  width: 8rem;
 }
-#heading1, #heading2, #heading3, #heading4, #heading5{
+#heading1,
+#heading2,
+#heading3,
+#heading4,
+#heading5 {
   margin-left: 10vw;
 }
-#heading1 b, #heading2 b, #heading3 b, #heading4 b, #heading5 b{
+#heading1 b,
+#heading2 b,
+#heading3 b,
+#heading4 b,
+#heading5 b {
   color: #e65728;
 }
-#content1, #content2, #content3, #content4{
+#content1,
+#content2,
+#content3,
+#content4 {
   width: 80vw;
   margin: 0 auto;
   padding: 20px;
@@ -167,11 +180,11 @@ body {
   margin: 0 auto;
   padding: 20px;
 }
-#table ul li{
+#table ul li {
   list-style-type: disc;
 }
-#table a:visited{
-  color:purple;
+#table a:visited {
+  color: purple;
 }
 footer {
   height: fit-content;
@@ -196,7 +209,7 @@ footer #links a:hover {
 /* PROJECT */
 #project-main {
   background: linear-gradient(315deg, #000000 0%, #414141 74%);
-margin-top: -5vh;
+  margin-top: -5vh;
   min-height: 100vh;
 }
 @media (max-width: 767px) {
@@ -206,7 +219,7 @@ margin-top: -5vh;
     justify-content: center;
   }
 }
-#card-col{
+#card-col {
   display: flex;
   justify-content: center;
 }
@@ -241,5 +254,9 @@ margin-top: -5vh;
     background-color: #fff;
     color: #000;
     font-family: Arial, sans-serif;
+  }
 }
-}
+
+
+/* !SCROLL BAR */
+

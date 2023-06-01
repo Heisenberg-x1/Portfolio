@@ -463,7 +463,7 @@ form p{
     opacity: 0;
   }
 
-  100% {j
+  100% {
     transform: translate(40px, 150px) rotate(80deg);
     opacity: 1;
   }
