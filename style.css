@@ -72,19 +72,170 @@ body {
 .first-page {
   position: relative;
   margin: 0 auto;
-  height: 90vh;
-  background: linear-gradient(315deg, rgba(0,0,0,0.4) 0%, #414141 74%), url(./photo/codeBg2.jpg);
-background-position: left top;
+  min-height: 90vh;
 }
 .first-page {
   width: 100%;
   height: 90vh;
 }
-/* @media screen and (min-width: 576px) {
-  #about-me-main {
-    margin-top:17vh
-  }
-} */
+#about-me-main {
+  background: linear-gradient(15deg, rgba(0, 0, 0, 0.4) 0%, #414141 74%),
+    url(./photo/codebg3.jpg);
+  background-position: center;
+}
+
+/* !Button */
+button {
+  position: relative;
+  padding: 12px 35px;
+  background: transparent;
+  font-size: 17px;
+  font-weight: 500;
+  color: tomato;
+  border: 1px solid tomato;
+  border-radius: 8px;
+  box-shadow: 0 0 0 #fec1958c;
+  transition: all 0.3s ease-in-out;
+}
+.world a button{
+  border-radius: 4px;
+}
+
+.star-1 {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 25px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+}
+
+.star-2 {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-3 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-4 {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  width: 8px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-5 {
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 0.6s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-6 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 0.8s ease;
+}
+
+button:hover {
+  background: transparent;
+  color: #fec195;
+  box-shadow: 0 0 25px #fec1958c;
+}
+
+button:hover .star-1 {
+  position: absolute;
+  top: -80%;
+  left: -30%;
+  width: 25px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+button:hover .star-2 {
+  position: absolute;
+  top: -25%;
+  left: 10%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+button:hover .star-3 {
+  position: absolute;
+  top: 55%;
+  left: 25%;
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+button:hover .star-4 {
+  position: absolute;
+  top: 30%;
+  left: 80%;
+  width: 8px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+button:hover .star-5 {
+  position: absolute;
+  top: 25%;
+  left: 115%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+button:hover .star-6 {
+  position: absolute;
+  top: 5%;
+  left: 60%;
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+.fil0 {
+  fill: #fffdef;
+}
 
 #div1 {
   display: flex;
@@ -95,7 +246,7 @@ background-position: left top;
 #div1,
 #gif {
   width: 50%;
-  height: 81vh;
+  height: 70vh;
   float: left;
 }
 #collins {
@@ -106,10 +257,18 @@ background-position: left top;
   position: relative;
 }
 .samurai {
+  display: none;
+}
+.world {
+  width: 100vw;
+  height: 10vh;
   position: absolute;
-  visibility: hidden;
-  top: 0;
-  right: 20%;
+  bottom: 0;
+  display: flex;
+}
+.world a {
+  border-radius: 5px;
+  margin: 10px auto;
 }
 @media screen and (max-width: 800px) {
   .samurai {
@@ -257,6 +416,19 @@ footer #links a:hover {
   }
 }
 
+/* *ABOUT */
 
-/* !SCROLL BAR */
 
+#about-me-main {
+  top: 15vh;
+  position: relative;
+}
+
+#about-me-main:before {
+  content: "";
+  display: block;
+  height: 100%;
+  margin-top: -100px;
+  visibility: hidden;
+  pointer-events: none;
+}
