@@ -3,11 +3,16 @@
   padding: 0;
   box-sizing: border-box;
   color: white;
+  font-family: "Titillium Web", sans-serif;
 }
 /* THE HOME PAGE */
 
 
 /* !HEADER */
+header{
+  height: 10vh;
+  border: 1px solid red;
+}
 #nav .navbar-nav .nav-link {
   color: white;
   display: flex;
@@ -69,73 +74,19 @@ body {
   background-repeat: repeat;
   background-size: cover;
 }
-.ContactMeContainer {
-  height: 50vh;
-}
 #mainScreenAnimation {
   position: absolute;
   bottom: 10vh;
   margin-top: 5vh;
   left: 42%;
 }
-#section1 {
-  height: 100vh;
-  width: 100%;
-}
-#developer{
-  mix-blend-mode: color-burn;
-  width: 80%;
-  margin: 0 auto;
-}
-#thumbnail{
-  width: 60%;
-}
-#video{
-  width: 70%;
-}
-#description {
-  width: 30vw;
-  margin-left: 33%;
-}
-#section2,
-#section3 {
-  height: fit-content;
-}
-#section2 {
-  margin-left: 10vw;
-}
-#section3 {
-  margin-top: 25px;
-}
-#section3Container {
-  float: right;
-}
-#corouselHackathon {
-  width: 70vw;
-  margin: 0 auto;
-}
-#developer-img{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#article1,
-#article2 {
-  width: 70%;
-  padding: 30px;
-  border: 1px solid #e65728;
-  border-radius: 7px;
-  box-shadow: 0 0 5px #e65728;
-  margin: 0 auto;
-}
-#addedInfo {
-  width: 70%;
-  border-bottom: 1px solid #e65728;
-}
+
 
 /* FOOTER */
 footer {
-  height: fit-content;
+  position: absolute;
+  top: 80vh;
+  min-height: 20vh;
   width: 100vw;
   background: linear-gradient(315deg, #000000 0%, #414141 74%);
  
@@ -148,19 +99,16 @@ footer #links a {
 footer #links a:hover {
   color: #e65728;
 }
- #footer{
-  width: 80vw;
-  margin: 0 auto;
-  padding: 20px;
-}
+
 /* *CONTACT ME */
 #contactBody {
-  background: url(./photo/CodeBG.jpg);
+  background: linear-gradient(15deg, rgba(0, 0, 0, 0.4) 0%, #414141 74%), url(./photo/CodeBG.jpg);
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
   overflow-x: hidden;
-  min-height: 100 vh;
+  height: 100 vh;
+  position: relative;
 }
 #form-Contact {
   padding: 0 auto;
@@ -169,15 +117,7 @@ footer #links a:hover {
   justify-content: center;
   align-items: center;
 }
-#t-area {
-  width: 50%;
-  height: 100px;
-  border-radius: 5px;
-  border: 1px solid #e65728;
-  padding: 10px;
-  background: transparent;
-  margin: 10px;
-}
+
 #row {
   width: 100%;
 }
@@ -242,6 +182,9 @@ footer #links a:hover {
 
 #contactme-main{
   padding-bottom: 60px;
+  height: 70vh;
+  position: absolute;
+  top: 10vh;
 }
 /* div2 */
 #contactPageContainer {
