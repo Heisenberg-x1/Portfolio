@@ -73,6 +73,7 @@ body {
   position: relative;
   margin: 0 auto;
   min-height: 90vh;
+  padding-bottom: 20px;
 }
 .first-page {
   width: 100%;
@@ -82,9 +83,13 @@ body {
   background: linear-gradient(15deg, rgba(0, 0, 0, 0.4) 0%, #414141 74%),
     url(./photo/codebg3.jpg);
   background-position: center;
+  background-attachment: fixed;
 }
 
 /* !Button */
+#gotoabout{
+  bottom: 10vh;
+}
 button {
   position: relative;
   padding: 12px 35px;
@@ -334,16 +339,23 @@ button:hover .star-6 {
   margin: 0 auto;
   padding: 20px;
 }
+main{
+  width: 100vw;
+}
+
 #footer {
-  width: 80vw;
-  margin: 0 auto;
+  width: 100%;
+  margin: auto;
   padding: 20px;
+  height: fit-content;
+  
+  margin: 0 auto;
 }
 #table ul li {
   list-style-type: disc;
 }
 #table a:visited {
-  color: purple;
+  color: rgb(252, 4, 252);
 }
 footer {
   height: fit-content;
@@ -359,11 +371,7 @@ footer #links a {
 footer #links a:hover {
   color: #e65728;
 }
-#footer {
-  width: 80vw;
-  margin: 0 auto;
-  padding: 20px;
-}
+
 
 /* PROJECT */
 #project-main {
@@ -431,4 +439,13 @@ footer #links a:hover {
   margin-top: -100px;
   visibility: hidden;
   pointer-events: none;
+}
+#about{
+  min-height: 90vh;
+  padding-top: 30px;
+  margin-top: 20vh;
+}
+.empty{
+  height: 12vh;
+  width: 100vw;
 }

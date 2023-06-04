@@ -71,8 +71,9 @@ body {
 }
 #mainScreenAnimation {
   position: absolute;
-  bottom: 20%;
-  left: 45%;
+  bottom: 10vh;
+  margin-top: 5vh;
+  left: 42%;
 }
 #section1 {
   height: 100vh;
@@ -177,17 +178,22 @@ footer #links a:hover {
 #row {
   width: 100%;
 }
-#div1Contact1{
-  padding-bottom: 25px;
-}
+
 #div2d{
-  margin-top: 30px;
+  margin: 30px auto;
+  
 }
-#div1Contact1, #div1Contact2 {
+ #div1Contact2 {
   border-radius: 30px;
+  width: max-content;
   height: fit-content;
   background: #212121;
   box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
 }
 #div2Contact {
   border-radius: 30px;
@@ -201,10 +207,16 @@ footer #links a:hover {
 }
 #list-contact {
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 #twoDivs1, #twoDivs2 {
   margin: 20;
   border-radius: 30px;
+}
+#div1Contact2 h4{
+  color: tomato;
 }
 #div1Contact2 ul li a {
   text-decoration: none;

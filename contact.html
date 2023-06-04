@@ -9,11 +9,11 @@
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <link rel="stylesheet" href="index.css">
   <link rel="icon" href="./photo/CK.png">
-   <!-- !google fonts -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Titillium+Web:wght@200&display=swap"
-       rel="stylesheet">
+  <!-- !google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Titillium+Web:wght@200&display=swap"
+    rel="stylesheet">
   <title>Contact Me</title>
 </head>
 
@@ -21,8 +21,7 @@
   <header>
     <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top" id="nav">
       <div class="container-fluid">
-        <img id="iconImage" src="./photo/me2.jpg" class="rounded-circle shadow-4 " style="height: 40px; width: 40px;"
-          alt="Avatar">
+        
         <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -34,9 +33,7 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">ABOUT</a>
-              </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="project.html">PROJECTS</a>
               </li>
@@ -53,68 +50,13 @@
     <br><br><br><br>
   </header>
   <main id="contactme-main">
+    <div class="loader JS_on" id="mainScreenAnimation">
+      <span class="binary"></span>
+      <span class="binary"></span>
+      <span class="getting-there">Let's chat, dev to dev</span>
+    </div>
     <div class="container container-fluid" id="contactPageContainer">
-      <div class="container-fluid row text-center" id="twoDivs1">
-        <br>
-        <div class="col col-md-10 col-lg-9 col-xl-7 col-xxl-6" id="div1Contact1">
-          <h4 style="text-align: center;padding-top: 20px;">Get in touch with me</h4>
-          <div id="form-Contact">
-            <form action="mailto:chemerilcollins@gmail.com" action="post">
-              <label for="email">Email</label>
-              <br>
-              <input type="email" name="email" id="email" required>
-              <br><br>
 
-              <label for="library">Choose your preferred CSS library</label>
-              <div class="radio" id="library">
-                <label>
-                  <input type="radio" name="library" value="bootstrap">
-                  Bootstrap
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="library" value="tailwind">
-                  Tailwind
-                </label>
-              </div>
-              <br>
-
-              <label for="check">What are you learning now?</label>
-              <div class="check" id="check">
-                <label>
-                  <input type="checkbox" name="learning[]" value="web-development">
-                  Web development
-                </label>
-                <br>
-                <label>
-                  <input type="checkbox" name="learning[]" value="app-development">
-                  App development
-                </label>
-                <br>
-                <label>
-                  <input type="checkbox" name="learning[]" value="artificial-intelligence">
-                  Artificial Intelligence
-                </label>
-                <br>
-                <label>
-                  <input type="checkbox" name="learning[]" value="machine-learning">
-                  Machine Learning
-                </label>
-              </div>
-              <br>
-
-              <label for="t-area">Write me any suggestion</label>
-              <br>
-              <textarea name="suggestion" id="t-area" cols="30" rows="10"></textarea>
-
-                <div class="buttons">
-                  <button type="reset" class="btn">Reset</button>
-                  <button type="submit" class="btn">Submit</button>
-                </div>
-            </form>
-          </div>
-        </div>
-      </div>
       <br><br>
       <div class="row text-center" id="div2d">
         <div class="col col-md-10 col-lg-9 col-xl-7 col-xxl-6" id="div1Contact2">
@@ -129,13 +71,13 @@
                 LINKEDIN</a>
             </li>
           </ul>
-  
-  
+
+
         </div>
       </div>
-      
+
     </div>
-    
+
   </main>
   <footer>
     <div id="footer">
@@ -143,7 +85,7 @@
         <div class="col" id="links">
           <br>
           <br>
-          <p><a href="index.html"><b>HOME</b></a> &nbsp;|&nbsp; <a href="about.html"><b>ABOUT ME</b></a> &nbsp;|&nbsp;
+          <p><a href="index.html"><b>HOME</b></a> &nbsp;|&nbsp;
             <a href="contact.html"><b>CONTACT ME</b> </a>
             &nbsp;|&nbsp; <a href="project.html"><b>PROJECTS</b></a>
           </p>
@@ -160,7 +102,7 @@
 
         </div>
         <br><br>
-        <p>&copy;2023 @Collins</p>
+        <p> Collins Kipkemoi &copy;2023</p>
       </div>
 
     </div>
