@@ -28,6 +28,9 @@ font-family: 'Titillium Web', sans-serif;
   height: 10vh;
   background: linear-gradient(315deg, #000000 0%, #414141 74%);
 }
+#offcanvasNavbar{
+  width: 30%;
+}
 .offcanvas-body{
   background: linear-gradient(315deg, #000000 0%, #414141 74%);
 }
