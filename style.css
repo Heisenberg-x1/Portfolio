@@ -415,6 +415,7 @@ footer #links a:hover {
 }
 .card-body {
   background-color: #353434;
+  position: relative;
 }
 .card-body .card-title {
   color: white;
@@ -430,8 +431,9 @@ footer #links a:hover {
 .col .card {
   aspect-ratio: 2/3;
 }
-.card img{
-  width: 100%;
+.card a{
+  position: absolute;
+  bottom: 10px;
 }
 
 /* *ABOUT */
