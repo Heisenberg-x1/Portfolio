@@ -430,18 +430,8 @@ footer #links a:hover {
 .col .card {
   aspect-ratio: 2/3;
 }
-@media print {
-  .card {
-    border: none;
-    box-shadow: none;
-  }
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-    color: #000;
-    font-family: Arial, sans-serif;
-  }
+.card img{
+  width: 100%;
 }
 
 /* *ABOUT */
