@@ -439,6 +439,10 @@ footer #links a:hover {
   position: absolute;
   bottom: 10px;
 }
+.card-img-top{
+  width: 100%;
+  height: 40%;
+}
 
 /* *ABOUT */
 
