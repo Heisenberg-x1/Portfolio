@@ -44,6 +44,10 @@ body {
 .navbar-nav li a:hover {
   animation: pulse 2s infinite;
 }
+#nav-items{
+  padding-left: 40%;
+  
+}
 
 @keyframes pulse {
   0% {
